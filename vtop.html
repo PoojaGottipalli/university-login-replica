@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VIT-AP-VTOP</title>
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="VIT_AP_logo.png" />
+    </div>
+    <p class="line_2">VTOP translates to "VIT on TOP"</p>
+    <p class="line_3">
+      A digital initiative by the institute facilitating
+      Faculty,Staff,Students,Parents and Alumni to access and process
+      Academics,Research,Supporting Servces at one common platform.
+    </p>
+
+    <style>
+      .header {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start; /* Center the content horizontally */
+        align-items: center; /* Center items vertically */
+        background-color: rgb(38, 91, 172);
+        color: white;
+        font-family: Arial, sans-serif;
+        padding: 10px 10px; /* Adjusted padding to fit logo and text */
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        height: 50px;
+      }
+      .logo {
+        height: 55px; /* Resizing the logo */
+        /* Space between the logo and text */
+        padding-left: 10px;
+      }
+      .line_2 {
+        color: rgb(64, 118, 200);
+        font-family: Arial;
+        font-size: 27px;
+        text-align: center;
+        font-weight: 650px;
+        margin-bottom: 3px;
+        padding-top: 60px;
+      }
+      .line_3 {
+        font-family: Arial;
+        font-size: 15px;
+        text-align: center;
+        width: 80%;
+        margin-left: 85px;
+        font-weight: 700px;
+        padding-left: 100px;
+      }
+    </style>
+
+    <style>
+      button.student {
+        color: rgb(36, 102, 226);
+        cursor: pointer;
+        height: 85px;
+        width: 330px;
+        font-size: 18px;
+        font-weight: 560;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        border: none;
+        padding-left: 7%;
+        padding-bottom: 2%;
+        margin-left: 17px;
+        border-top: 3px solid rgb(36, 102, 226);
+        background-color: rgba(255, 255, 255, 0.952);
+      }
+    </style>
+
+    <button class="student" onclick="openLoginPage()">Student</button>
+    <style>
+      button.employee {
+        color: rgba(211, 193, 30, 0.922);
+        cursor: pointer;
+        height: 85px;
+        width: 330px;
+        font-size: 18px;
+        font-weight: 560;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        border: none;
+        padding-left: 7%;
+        padding-bottom: 2%;
+        margin-left: 39px;
+        border-top: 3px solid rgba(211, 193, 30, 0.922);
+        background-color: rgba(255, 255, 255, 0.952);
+      }
+    </style>
+    <button class="employee" onclick="openLoginPage()">Employee</button>
+    <style>
+      button.parent {
+        color: rgb(16, 173, 16);
+        cursor: pointer;
+        height: 85px;
+        width: 330px;
+        font-size: 18px;
+        font-weight: 560;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        border: none;
+        padding-left: 7%;
+        padding-bottom: 2%;
+        margin-left: 39px;
+        border-top: 3px solid rgb(16, 173, 16);
+        background-color: rgba(255, 255, 255, 0.952);
+      }
+    </style>
+    <style>
+      button.alumni {
+        color: rgb(51, 185, 238);
+        cursor: pointer;
+        height: 85px;
+        width: 330px;
+        font-size: 18px;
+        font-weight: 560;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+        border-radius: 3px;
+        border: none;
+        padding-left: 7%;
+        padding-bottom: 2%;
+        margin-left: 39px;
+        border-top: 3px solid rgb(51, 185, 238);
+        background-color: rgba(255, 255, 255, 0.952);
+      }
+      .box {
+        width: 730px;
+        height: 320px;
+        border-top: 3px solid rgb(114, 27, 27);
+        border-radius: 3px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 20px;
+      }
+
+      ul li {
+        font-size: 15px;
+      }
+      .main {
+        padding: 0px;
+
+        margin-bottom: 30px;
+        color: rgb(114, 27, 27);
+        font-size: 16px;
+        font-weight: 550;
+      }
+    </style>
+    <button class="parent" onclick="openParentLoginPage()">Parent</button>
+    <button class="alumni" onclick="openAlumniLoginPage()">Alumni</button>
+    <div class="box">
+      <ul>
+        <ul class="main">
+          Vellore Institute of Technology- Andhra Pradesh (VIT-AP University),
+          India
+        </ul>
+        <li>
+          VIT-AP University:Ranked No. #1 in Emerging Private Universities in
+          India (Outlook University Rankings-2022 & 2023)
+        </li>
+        <hr />
+        <li>
+          VIT-AP University recognized for its excellence in providing Outcome
+          Based Education (OBE) and Ranked in the Diamond Band (A+) Category in
+          the OBE-2023 R-World Institutional Ranking (WIR)
+        </li>
+        <hr />
+        <li>
+          VIT-AP University has been recognized as the Host Institute (HI) for
+          the implementation of the Innovation and Incubation Schemes under the
+          Ministry of Micro, Small & Medium Enterprises (MSME), Government of
+          India.
+        </li>
+        <hr />
+        <li>
+          VIT-AP TBI Foundation (VTBIF) has been successfully incorporated as a
+          Section-8 Company, with the Ministry of Corporate Affairs (MCA),
+          Government of India.
+        </li>
+        <hr />
+        <li>
+          VIT-AP University faculty members are in the world's Top 2% Scientists
+          list in the year 2022 as per the survey conducted by Stanford
+          University and Elsevier.
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      function openLoginPage() {
+        window.location.href = "6.html";
+      }
+      function openParentLoginPage() {
+        window.location.href = "parentLogin.html";
+      }
+      function openAlumniLoginPage() {
+        window.location.href = "alumniLogin.html";
+      }
+    </script>
+  </body>
+</html>

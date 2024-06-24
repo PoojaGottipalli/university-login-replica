@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VIT-AP-VTOP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        .header {
+           
+            width: 100%;
+            display: flex;
+            justify-content:flex-start; /* Center the content horizontally */
+            align-items: center;    /* Center items vertically */
+            background-color: rgb(64, 118, 200);
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 10px 10px; /* Adjusted padding to fit logo and text */
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            height: 50px; /* Increased height for better visual balance with the logo */
+        }
+
+        .logo {
+            height: 55px; /* Resizing the logo */
+            /* Space between the logo and text */
+           
+           
+        }
+
+       
+        
+
+        .wrapper {
+            width: 515px;
+            height:400px;
+            background-color: white;
+            color: #333;
+            padding: 30px 20px;
+            border-radius: 4px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            border-top: 3px solid rgb(22, 115, 192);
+            margin-top: 115px; /* Space for the fixed header */
+        }
+        .icon-container {
+            position: absolute;
+            right: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background-color: #f1f1f1; /* Light background color for the container */
+             /* Make it circular */
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Slight shadow */
+        }
+
+        .input-box {
+            position: relative;
+            margin:0;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 30px;
+            background: transparent;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right:40px;
+            box-sizing: border-box;
+            color: #333;
+        }
+
+        .input-box input::placeholder {
+            color: #938c8c;
+            
+        }
+
+        .input-box img {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+        }
+        .captcha {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+    /* Adjust margin-left if necessary to align the whole captcha section */
+            margin-left: 50px; /* Reduce left margin for better alignment */
+            border: none;
+        }
+
+        .captcha-form {
+            font-size: 30px;
+            width: 200px; /* Decreased width from the original size */
+            text-align: center; /* Center the text in the textbox */
+            border: 1px solid #ccc; /* Optional: add a border to match other inputs */
+    /* Optional: add border-radius for consistent style */
+            padding: 5px;
+            margin-left:40px;
+    /* Optional: add padding for better spacing inside */
+        }
+
+
+        .captcha button{
+            cursor:pointer;
+            background-color:rgb(23, 154, 104) ;
+            width:28px;
+            height:46px;
+            color:white;
+            border:none;
+            border-radius: 2pxSS;
+          
+
+
+        }
+        .captcha button:active{
+            border:2px solid rgb(30, 159, 118);
+            outline:none;
+            box-shadow:0 0 10px rgb(30, 159, 118) ;
+        }
+       
+        .btn-container{
+            display: flex;
+            justify-content: flex-end; /* Align the button to the right */
+            margin-top: 10px; 
+        }
+
+       
+        
+
+        
+
+        .btn {
+            
+            width: 60px;
+            height:25px;
+            
+            background-color: #4773eb;
+            border: none;
+            border-radius: 3px;
+            color: white;
+           
+            font-size: 13px;
+           
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #3961cd;
+            
+        }
+        .links {
+            display: flex;
+            margin-top: 0px;
+            gap: 5px;
+            flex-direction: column; 
+            
+            color: #555;
+            
+            font-size: 13px;
+        }
+       
+
+        .register-link {
+            text-align:right;
+            color: #555;
+           
+        }
+
+        .register-link a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 300px;
+            margin-left: 5px;
+            transition: color 0.3s ease;
+            font-size:13px;
+        }
+
+        .register-link a:hover {
+            color: #37733a;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="VIT_AP_logo.png" alt="VIT-AP Logo">
+        
+    </div>
+    <div class="wrapper">
+        <form action="">
+            <h1 style="margin-top: 0px; text-align: left; font-size: 25px; color: #333;">VTOP login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username">
+                <div class="icon-container"><img src="bxs-user.svg" alt="User Icon"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password">
+                <div class="icon-container"><img src="bxs-lock-alt.svg" alt="Lock Icon"></div>
+            </div>
+            <div class="captcha">
+                <input type="text" class="captcha-form" id="captchaText" value="" disabled>
+                <button class="captcha-refresh">
+                    <i class="fa fa-refresh" style="font-size:13px"></i>
+                </button>
+
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Enter CAPTCHA shown above">
+                
+            </div>
+            
+            
+            <div class="btn-container">
+            <button class="btn" type="submit">Submit</button></div>
+            <div class="links">
+               
+                <a href="#">Forgot Password</a>
+                <a href="#">Forgot LoginId</a>
+
+            </div>
+            <div class="register-link">
+                <u style="color:#45a049"><a href="#">Go to Home Page</a></u>
+            </div>
+        </form>
+    </div>
+    <script>
+        // Function to generate a random CAPTCHA string without lowercase letters
+        function generateCaptcha() {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'; // Uppercase and digits only
+            let captcha = '';
+            for (let i = 0; i < 6; i++) {
+                captcha += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            return captcha;
+        }
+
+        // Function to set the generated CAPTCHA in the input field
+        function setCaptcha() {
+            const captchaTextElement = document.querySelector('#captchaText');
+            captchaTextElement.value = generateCaptcha();
+        }
+
+        // Event listener for the refresh button to generate a new CAPTCHA
+        document.querySelector('.captcha-refresh').addEventListener('click', (e) => {
+            e.preventDefault(); // Prevents the button from submitting the form
+            setCaptcha(); // Generate and set a new CAPTCHA
+        });
+
+        // Initial CAPTCHA generation on page load
+        document.addEventListener('DOMContentLoaded', (event) => {
+            setCaptcha(); // Generate and set a CAPTCHA when the page loads
+        });
+    </script>
+</body>
+</html>
